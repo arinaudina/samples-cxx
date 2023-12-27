@@ -4,8 +4,7 @@
 using namespace std;
 
 int main() {
-	struct student
-	{
+	struct student {
 		char FIO[41];
 		int course;
 		double avg_rating;
