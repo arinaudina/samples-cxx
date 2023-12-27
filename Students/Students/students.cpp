@@ -23,8 +23,8 @@ int main() {
 		} subjects[2];
 	};
 
-	struct student iam = { "Udina A.B.", 10, 89.7 };
-	struct student_ext other = {
+	student iam = { "Udina A.B.", 10, 89.7 };
+	student_ext other = {
 	 "Marihewa S.M.", 9, 199.7,
 		{
 		  {"biology", 4},
