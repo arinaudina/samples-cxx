@@ -10,8 +10,7 @@ int main() {
 		double avg_rating;
 	};
 
-	struct student_ext
-	{
+	struct student_ext {
 		char FIO[41];
 		int course;
 		double avg_rating;
