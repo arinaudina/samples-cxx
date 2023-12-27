@@ -35,6 +35,7 @@ int main() {
 	puts(iam.FIO);
 	strcpy_s(other.subjects[0].name, "Philosophy");
 	other.subjects[0].grade = 100;
+	
 	if (other.avg_rating <= iam.avg_rating) {
 	    cout << iam.FIO << iam.avg_rating;
 	}
