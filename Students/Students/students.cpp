@@ -1,5 +1,6 @@
 #include <iostream>
-#include <cstring>
+#include <cstdio> // for sprintf_s
+#include <cstring> // for strcpy_s
 
 using namespace std;
 
@@ -22,26 +23,38 @@ struct StudentExt {
 
 
 int main() {
-	Student iam = { "Udina A.B.", 10, 89.7 };
-	StudentExt other = {
-	 "Marihewa S.M.", 9, 199.7,
-		{
-		  {"biology", 4},
-		   {"chemistry", 5}
-		   }
-	};
-
+	// Task 1
+	Student iam = { "Udina A.B.", 10, 89.7 }; 
 	iam.course++;
-	puts(iam.FIO);
-	strcpy_s(other.subjects[0].name, "Philosophy");
+	cout << iam.FIO << endl;
+
+	// Task 2
+	Student students[25];
+	for (int i = 0; i < 25; ++i) {
+		sprintf_s(students[i].FIO, "student %d", i);
+		students[i].course = 10;
+		students[i].avgRating = rand() % 100;
+	}
+
+	Student* topStudent = &students[0]; 
+	for (int i = 1; i < 25; ++i) { 
+		if (topStudent->avgRating < students[i].avgRating) {
+			topStudent = &students[i];
+		}
+	}
+	cout << "Top student:" << topStudent->FIO << " " << topStudent->avgRating << endl;
+	topStudent = nullptr; // NULL for C
+
+	// Task 3
+	StudentExt other = { 
+		"Marihewa S.M.", 9, 199.7,
+		{
+			{"Biology", 17},
+			{"chemistry", 25}
+		}
+	};
+	strcpy_s(other.subjects[0].name, "philosophy");
 	other.subjects[0].grade = 100;
-	
-	if (other.avgRating <= iam.avgRating) {
-	    cout << iam.FIO << iam.avgRating;
-	}
-	else {
-	    cout << other.FIO << other.avgRating;
-	}
 
 	return 0;
 }
