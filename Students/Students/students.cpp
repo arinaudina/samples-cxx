@@ -3,26 +3,27 @@
 
 using namespace std;
 
+struct Student {
+	char FIO[41];
+	int course;
+	double avg_rating;
+};
+
+struct Student_ext {
+	char FIO[41];
+	int course;
+	double avg_rating;
+
+	struct {
+		char name[36];
+		int grade;
+	} subjects[2];
+};
 int main() {
-	struct student {
-		char FIO[41];
-		int course;
-		double avg_rating;
-	};
+	
 
-	struct student_ext {
-		char FIO[41];
-		int course;
-		double avg_rating;
-
-		struct {
-			char name[36];
-			int grade;
-		} subjects[2];
-	};
-
-	student iam = { "Udina A.B.", 10, 89.7 };
-	student_ext other = {
+	Student iam = { "Udina A.B.", 10, 89.7 };
+	Student_ext other = {
 	 "Marihewa S.M.", 9, 199.7,
 		{
 		  {"biology", 4},
