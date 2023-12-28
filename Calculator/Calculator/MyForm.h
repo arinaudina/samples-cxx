@@ -330,53 +330,53 @@ namespace Calculator {
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) { 
-	richTextBox1->Text += "1";
-}
-private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "";
-}
-private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "+";
-}
-private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "*";
-}
-private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "2";
-}
-private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "3";
-}
-private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "4";
-}
-private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "5";
-}
-private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "6";
-}
-private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "7";
-}
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "8";
-}
-private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "9";
-}
-private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "0";
-}
-private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "-";
-}
-private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "/";
-}
-private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->Text += "=";
-}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) { 
+		richTextBox1->Text += "1";
+	}
+	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text = "";
+	}
+	private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "+";
+	}
+	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "*";
+	}
+	private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "2";
+	}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "3";
+	}
+	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "4";
+	}
+	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "5";
+	}
+	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "6";
+	}
+	private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "7";
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "8";
+	}
+	private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "9";
+	}
+	private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "0";
+	}
+	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "-";
+	}
+	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "/";
+	}
+	private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->Text += "=";
+	}
 };
 }
